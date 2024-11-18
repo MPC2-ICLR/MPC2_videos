@@ -360,7 +360,7 @@
         <div class="video_horizontal_container">
             <div class="video_item" style="width: 45%;">
                 <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true">Figure W3.</a> Standing with uncertain planning model</div>
+                <div id="dynsyn_actuator" class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true">Figure W3.</a> Standing with uncertain planning model</div>
             </div>
             <div class="video_item"style="width: 45%;">
                 <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true" alt="MPC2" style="width:100%">
@@ -479,6 +479,38 @@
                     <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4" type="video/mp4">
                 </video>
                 <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4">Video W22.</a> Sample Gradient</div>
+            </div>
+        </div>
+        
+        <h3 id="drl">Performances of DRL baselines</h3>
+        Below we show the control performance of MPO and DEP-RL on the MS-Human-700 model (choosing best from 3 random seeds). We found them fail to either stand or walk with the high-dimensional model.
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_stand.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_stand.mp4">Video W23.</a> MPO standing.</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_walk.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_walk.mp4">Video W24.</a> MPO walking</div>
+            </div>
+        </div>
+
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_stand.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_stand.mp4">Video W23.</a> DEP-RL standing.</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_walk.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_walk.mp4">Video W24.</a> DEP-RL walking</div>
             </div>
         </div>
 
