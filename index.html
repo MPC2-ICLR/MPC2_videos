@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .container {
-            width: 100%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
         }
@@ -19,13 +19,13 @@
             margin: 1%;
         }
         .video_container {
-            width: 60%;
+            width: 40%;
             margin: auto;
             overflow: hidden;
             line-height: 1.5;
         }
         .video_horizontal_container {
-            width: 100%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
             line-height: 1.5;
@@ -56,7 +56,7 @@
         h3 {
             font-family: Arial;
             font-size: 25px;
-            font-weight: normal;
+            font-weight: bold;
         }
         p {
             font-family: Arial;
@@ -91,7 +91,7 @@
         <h1>Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning</h1>
         <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/fig_overall_nocap.png?raw=true" alt="MPC2" style="width:100%">
         <div class="video_label">
-            High-dimensional musculoskeletal system control over a large collection of motion tasks.
+            Figure W1. High-dimensional musculoskeletal system control over a large collection of motion tasks.
         </div>
         <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
 
@@ -190,24 +190,24 @@
         <!-- <p>
             Additionally, the control performance of DRL-based methods can deteriorate due to unexpected terrain conditions or sudden actuator faults, necessitating further training to adapt to changes in both the environment and the system.        
         </p> -->
-        <div class="video_horizontal_container">
+        <div class="video_horizontal_container" id="dynsyn_fail">
             <div class="video_item">
                 <video controls width="100%" >
                     <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_dynsyn_walk.mp4" type="video/mp4">
                 </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_dynsyn_walk.mp4">Unnatural behavior</a>  without reference trajectory</div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_dynsyn_walk.mp4">Video W1.</a> Unnatural behavior  without reference trajectory</div>
             </div>
             <div class="video_item">
                 <video width="100%" controls>
                     <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/DynSyn_rough.mp4" type="video/mp4">
                 </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/DynSyn_rough.mp4">Failure</a>  when the terrain condition changes</div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/DynSyn_rough.mp4">Video W2.</a> Failure  when the terrain condition changes</div>
             </div>
             <div class="video_item">
                 <video width="100%" controls>
                     <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_DynSyn_5sdisable_clip3.mp4" type="video/mp4">
                 </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_DynSyn_5sdisable_clip3.mp4">Failure</a>  when the posterior leg muscles are suddenly disabled</div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_DynSyn_5sdisable_clip3.mp4">Video W3.</a> Failure  when the posterior leg muscles are suddenly disabled</div>
             </div>
         </div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -246,11 +246,11 @@
         <p></p>
         <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/figure_algo.png?raw=true" alt="MPC2" style="width:100%">
         <div class="video_label">
-            Algorithmic pipeline of MPC<sup>2</sup>
+            Figure W2. Algorithmic pipeline of MPC<sup>2</sup>
         </div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <h2>Musculoskeletal Control with MPC<sup>2</sup></h2>
-        <h3>Full-body motion control</h3>
+        <h3 id="fullbody">Full-body motion control</h3>
         <p>
             We show control sequences over full-body motion tasks using MPC<sup>2</sup>. 
             <br>Our proposed method demonstrates:
@@ -264,46 +264,47 @@
         <!-- <p>
             We show control sequences of the Stand, Walk, Rough, Slope, and Stair tasks using MPC<sup>2</sup>. While no previous control methods have demonstrated success in whole-body musculoskeletal systems for these tasks,MPC<sup>2</sup> exhibits consistent and stable control performance across various tasks, enabling navigation over different terrain conditions.
         </p> -->
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4">Standing upright</a></div>
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-        </div>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4">Walking over flat floor</a></div>
 
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4">Video W4.</a> Standing upright</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4">Video W5.</a> Walking over flat floor</div>
+            </div>
+            
         </div>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4">Walking over rough terrain</a></div>
 
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-        </div>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4">Walking up and down a slope</a></div>
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4">Video W6.</a> Walking over rough terrain</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4">Video W7.</a> Walking up and down a slope</div>
+            </div>
 
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4">Video W8.</a> Walking up and down a stair</div>
+            </div>
+            
         </div>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4">Walking up and down a stair</a></div>
 
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-        </div>
-        <h3>Sports imitation</h3>
+        <h3 id="sport">Sports imitation</h3>
         <p>
             We also demonstrate that the training-free, near-real-time control generation of MPC<sup>2</sup> enables efficient reward engineering, facilitating stable control of sports imitation.
         </p>
@@ -311,11 +312,11 @@
             <video width="100%" controls>
                 <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_soccer2x.mp4" type="video/mp4">
             </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_soccer2x.mp4">Soccer motion imitation</a></div>
+            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_soccer2x.mp4">Video W9.</a> Soccer motion imitation</div>
 
             <hr style="height:1px;border-width:0;color:gray;background-color:gray">
         </div>
-        <h3>Adaption to model changes</h3>
+        <h3 id="actuator_change">Adaption to model changes</h3>
         <p>
             Compared to the fragile control policy of DRL-based methods, MPC<sup>2</sup> is capable of:
             <br> &nbsp&nbsp&nbsp&nbsp&bull; zero-shot adaption to sudden model changes
@@ -329,101 +330,156 @@
             <video width="100%" controls>
                 <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk_5sdisable_clip4.mp4" type="video/mp4">
             </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk_5sdisable_clip4.mp4">Adaption to posterior leg muscles disabled</a></div>
+            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk_5sdisable_clip4.mp4">Video W10.</a> Adaption to posterior leg muscles disabled</div>
 
         </div>
-        <h3>Robust to perturbation forces</h3>
+        <h3 id="force">Robust to perturbation forces</h3>
         <p>
             MPC^2 is capable of rapid adaption to sudden perturbation forces to the pelvis, demonstrating robust control performance.
         </p>
 
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4">Consistent 100N from random directions</a></div>
+        <div class="video_horizontal_container">
+            <div class="video_item" style="width: 45%;">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4">Video W11.</a> Consistent 100N from random directions</div>
+            </div>
+            <div class="video_item"style="width: 45%;">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4">Video W12.</a> 0.2s 500N from random directions</div>
+            </div>
         </div>
 
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4">0.2s 500N from random directions</a></div>
-        </div>
-
-        <h3>Planning under uncertain model</h3>
+        <h3 id="uncertain">Planning under uncertain model</h3>
+        <p>
         We demonstrate that MPC<sup>2</sup> is capable of planning under uncertain model dynamics, where each body of the is perturbed by random forces or torques in each planning timestep (mean and one standard error accross 20 independent trials). 
+        </p>
         <div class="video_horizontal_container">
             <div class="video_item" style="width: 45%;">
                 <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true">Standing with uncertain planning model</a></div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true">Figure W3.</a> Standing with uncertain planning model</div>
             </div>
             <div class="video_item"style="width: 45%;">
                 <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true">Walking with uncertain planning model</a></div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true">Figure W4.</a> Walking with uncertain planning model</div>
             </div>
         </div>
 
 
 
-        <h3>Control over ostrich models</h3>
-
+        <h3 id="ostrich">Control over ostrich models</h3>
+        <p>
         We demonstrate that MPC<sup>2</sup> is capable of controlling the ostrich model (120 muscles) with the <b> same cost function </b> used for human model walking.
+        </p>
 
         <div class="video_container">
             <video width="100%" controls>
                 <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_origin.mp4" type="video/mp4">
             </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_origin.mp4">Control over ostrich models with same cost function as human walking</a></div>
+            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_origin.mp4">Video W13.</a> Control over ostrich models with same cost function as human walking</div>
         </div>
 
-        Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
 
+        <h3 id="cost_design">Automatic cost function design</h3>
+        <p>
+            Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
+       </p>
 
         <div class="video_horizontal_container">
             <div class="video_item">
                 <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_ostrich.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_ostrich.png?raw=true">Optimization over foward speed (0.90m/s)</a></div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_ostrich.png?raw=true">Figure W5.</a> Optimization over foward speed</div>
             </div>
             <div class="video_item" style="width: 60%;">
                 <video width="100%" controls>
                     <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_optimized.mp4" type="video/mp4">
                 </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_optimized.mp4">Optimized gait of ostrich (2.08m/s)</a></div>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_optimized.mp4">Video W14.</a> Optimized gait of ostrich (0.90m/s to 2.08m/s)</div>
             </div>
         </div>
 
-        <h3>Control over mice models</h3>
-        We demonstrate that MPC<sup>2</sup> is capable of controlling the mice model (226 muscles).
 
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mice.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mice.mp4">Control over mice models</a></div>
+        <h3 id="com">Center of mass polygon support</h3>
+        <p>We demonstrate that MPC<sup>2</sup>maintains larger polygon support than DynSyn during walking, enhancing the stability.  </p>
+        <div class="video_horizontal_container">
+            <div class="video_item" style="width: 45%;">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4">Video W15.</a> CoM polygon support of MPC<sup>2</sup><br>area: 0.0761&plusmn;0.0260</div>
+            </div>
+            <div class="video_item"style="width: 45%;">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4">Video W16.</a> CoM polygon support of DynSyn<br>area: 0.0582&plusmn;0.0151</div>
+            </div>
         </div>
 
-        <h3>Center of mass polygon support</h3>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4">CoM polygon support of MPC<sup>2</sup></a></div>
-        </div>
 
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4">CoM polygon support of DynSyn</a></div>
-        </div>
-
-        <h3>Energy consumption</h3>
-        We demonstrate that MPC<sup>2</sup> is capable of reducing the energy consumption by over 75% compared to DynSyn during walking.
+        <h3 id="energy">Energy consumption</h3>
+        <p>We demonstrate that MPC<sup>2</sup> is capable of reducing the energy consumption by over 75% compared to DynSyn during walking.</p>
+        
 
         <div class="video_container">
             <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/energy.png?raw=true" alt="MPC2" style="width:100%">
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/energy.png?raw=true">Energy consumption comparison</a></div>
+            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/energy.png?raw=true">Figure W6.</a> Energy consumption comparison</div>
+        </div>
+
+        <h3 id="mpc">Performances of MPC baselines</h3>
+        <p>We demonstrate that baseline MPC methods provided by Mujoco MPC fail to achieve walking over the MS-Human-700 model.</p>
+        <p>
+        Non sampling-based MPC require long planning time due to the computation of the derivative of the high-dimensional dynamics, hinders real-time decision making.
+        </p>
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_gd.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_gd.mp4">Video W17.</a> Gradient Descent</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqg.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqg.mp4">Video W18.</a> iLQG</div>
+            </div>
+
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqs.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqs.mp4">Video W19.</a> iLQS</div>
+            </div>
+        </div>
+
+        <p>
+        Sampling based MPC struggles to sample effective control sequences due to the high-dimensionalaction space.
+        </p>
+
+        <div class="video_horizontal_container">
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_crossentropy.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_crossentropy.mp4">Video W20.</a> Cross Entropy</div>
+            </div>
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_robustsample.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_robustsample.mp4">Video W21.</a> Robust Sampling</div>
+            </div>
+
+            <div class="video_item">
+                <video width="100%" controls>
+                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4" type="video/mp4">
+                </video>
+                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4">Video W22.</a> Sample Gradient</div>
+            </div>
         </div>
 
         <!-- <video></video> -->
