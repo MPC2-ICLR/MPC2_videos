@@ -383,6 +383,9 @@
         </div>
 
 
+        
+
+
         <h3 id="cost_design">Automatic cost function design</h3>
         <p>
             Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
@@ -528,6 +531,18 @@
             </div>
         </div>
 
+        <h3 id="ostrich">Dexterous manipulation over the arm model</h3>
+        <p>
+        We demonstrate that MPC<sup>2</sup> is capable of controlling the arm musculoskeletal model (85 muscles) to maniputate cube to a sequence of target orientations.
+        </p>
+
+        <div class="video_container" width="50%">
+            <video width="100%" controls>
+                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/hand_compressed.mp4" type="video/mp4">
+            </video>
+            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/hand_compressed.mp4">Video W28.</a> Dexterous manipulation over arm musculoskeletal model</div>
+        </div>
+
         <!-- <video></video> -->
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         <h2>Conclusion</h2>
@@ -541,6 +556,8 @@
             <br>&nbsp&nbsp&nbsp&nbsp&bull; enabling <b>training-free</b> full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods
             <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>rapid adaption</b> to sudden model changes, fully leveraging the over-actuated nature to achieve robust control.
         </p>
+
+
         <!-- <ul>
             <li>achieving near real-time stable control of high-dimensional musculoskeletal systems.</li>
             <li>enabling zero-shot high-dimensional full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods.</li>
