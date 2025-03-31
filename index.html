@@ -1,102 +1,132 @@
-<!-- a webpage for the project -->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MPC2</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .video_label {
-            text-align: center;
-            font-family: Verdana;
-            font-size: 20px;
-            font-weight: normal;
-            margin: 1%;
-        }
-        .video_container {
-            width: 40%;
-            margin: auto;
-            overflow: hidden;
-            line-height: 1.5;
-        }
-        .video_horizontal_container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            line-height: 1.5;
-            display: flex;
-        }
-        .video_item {
-            margin: 1%;
-            width: 32%;
-        }
-        .list_container {
-            margin-left: 10px;/*or whatever indentation size you want*/
-        }
-        
-        h1 {
-            text-align: center;
-            font-family: Arial;
-            font-size: 40px;
-            line-height: 1.2;
-            font-weight: normal; 
-        }
-        h2 {
-            text-align: center;
-            font-family: Arial;
-            font-size: 30px;
-            font-weight: normal;
-            
-        }
-        h3 {
-            font-family: Arial;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        p {
-            font-family: Arial;
-            font-size: 20px;
-            line-height: 1.5;
-        }
-        ul {
-            margin: 0;
-        }
-        li {
-            font-family: Arial;
-            font-size: 20px;
-            line-height: 1.5;
-        }
-        p2 {
-            font-family: Arial;
-            font-size: 15px;
-            line-height: 1.5;
-            text-align: center;
-        }
-        p_video {
-            text-align: center;
-            font-family: Garamond;
-            font-size: 20px;
-            font-weight: normal;
-        }
-        
-    </style>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning">
+  <meta property="og:title" content="MPC2"/>
+  <meta property="og:description" content="Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/fig_overall_nocap.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="MPC2">
+  <meta name="twitter:description" content="Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/fig_overall_nocap.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="musculoskeletal control, model predictive control, hierarchical planning, motion control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MPC2</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning</h1>
-        <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/fig_overall_nocap.png?raw=true" alt="MPC2" style="width:100%">
-        <div class="video_label">
-            Figure W1. High-dimensional musculoskeletal system control over a large collection of motion tasks.
-        </div>
-        <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
 
-        <!-- <h2>Abstract</h2>
-        <p>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="#" target="_blank">Author 1</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Author 2</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Author 3</a></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Institution Name<br>ICLR 2024</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/mpc2-6B42" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/fig_overall_nocap.png" alt="MPC2" style="width:100%">
+      <h2 class="subtitle has-text-centered">
+        Figure 1. High-dimensional musculoskeletal system control over a large collection of motion tasks.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
             Controlling high-dimensional nonlinear systems presents significant challenges in 
             biological and robotic applications due to the large state and action spaces. 
             While deep reinforcement learning has emerged as the leading approach, 
@@ -111,464 +141,574 @@
             enables zero-shot high-dimensional motion control across diverse movement tasks, 
             such as standing, walking on varying terrains, and sports motion imitation. It can 
             be incorporated into optimal cost function design to automatically optimize the 
-            objective, reducing the reliance on traditional reward engineering methods. Our proposed method also enables rapid adaptation to sudden system changes, fully levraging the over-actuated nature of the musculoskeletal system.
-            This work presents a major advancement in (near) real-time control for complex dynamical systems. Our 
-            implementation of MPC<sup>2</sup> is in the <a href="https://anonymous.4open.science/r/mpc2-6B42">anonymous link</a>.
-        </p>
-        
-
-        
-            <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
-
-        <!-- <h2>Full-body Musculoskeletal Control</h2> -->
-
-        <p>In this paper, we aim to control high-dimensional musculoskeletal systems to achieve movement tasks.
-            <br>We expect the control method to have the following properties:
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>(near) real-time</b> control generation
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>training-free</b> deployment over different task and environments
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>robust</b> performance subject to sudden model changes
-        </p>
-        
-
-        <!-- <p>In this paper, we aim to control high-dimensional musculoskeletal systems over a large collection of motion tasks, which presents significant challenges in 
-            biological and robotic applications due to:
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; the high non-linearity of the neural-muscle-joint dynamics
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; the high-dimensional state and control spaces resulting from the over-actuated system structure.
-        </p>
-         -->
-        <p>We use the model, <a href="https://lnsgroup.cc/research/MS-Human-700" >MS-Human-700</a>, as the target high-dimensional musculoskeletal system. 
-            <br> It is a comprehensive whole-body model consisting of 90 rigid body segments, 206 joints, and <b>700</b> muscle-tendon units.
-            <br> Both <b>non-linearity</b> neural-muscle-joint dynamics and the <b>high-dimensional</b> state and control spaces presents significant challenges to control the system.
-        </p>
-        
-            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <h2>High-dimensional Musculoskeletal Control with Deep Reinforcement Learning</h2>
-        <p>Among existing trials for high-dimensional musculoskeletal control, deep reinforcement learning (DRL) are predominantly used, where the successes come with the following significant requirements:
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; long training time to generate effective control
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; reference trajectories to guide the learning process
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; specific task and model to reduce training difficulty
-        </p>  
-        <!-- <ul>
-            <li>a substantial amount (typically hours to days) of training time to generate 
-            effective control for one specific task and one model;</li>
-            <li>reference trajectories to guide the learning process.</li>
-        </ul> -->
-        <!-- <p>
-            Additionally, the control performance of DRL-based methods can deteriorate due to unexpected 
-            terrain conditions or sudden actuator faults, 
-            necessitating further training to adapt to changes in both the environment and the system.
-        </p> -->
-        <p>
-            Below we demonstrate the control performance from the current state-of-the-art DRL-based 
-        method, DynSyn, on the MS-Human-700 model, where we observe that DynSyn:
-        <br>&nbsp&nbsp&nbsp&nbsp&bull; fails to learn a natural gait without reference trajectories
-        <br>&nbsp&nbsp&nbsp&nbsp&bull; fails over unexpected terrain conditions
-        <br>&nbsp&nbsp&nbsp&nbsp&bull; fails when the model suddenly changes
-        </p>
-        <!-- <ul>
-            <li>fails to learn a natural gait without reference trajectories</li>
-            <li>fails over unexpected terrain conditions;</li>
-            <li>fails when the model dynamics suddenly changes.</li>
-        </ul> -->
-        <!-- <p>
-            In this paper, we aim to control the high-dimensional musculoskeletal system, which presents significant challenges in 
-            biological and robotic applications due to:
-
-    
-            
-            use <a href="https://lnsgroup.cc/research/MS-Human-700" >MS-Human-700</a> as 
-            the target high-dimensional musculoskeletal system. MS-Human-700 is a comprehensive whole-body 
-            musculoskeletal model comprising 90 rigid body segments, 206 joints, and 700 muscle-tendon units. 
-            Controlling this full-body model requires coordinating 700 neural controls to activate the 
-            corresponding muscles. While the current state-of-the-art deep reinforcement learning (DRL)-based 
-            method, <a href="https://sites.google.com/view/dynsyn" >DynSyn</a>, has demonstrated the ability 
-            to control walking for the full-body musculoskeletal model, its success comes with two significant 
-            requirements: (1) a substantial amount (typically hours to days) of training time to generate 
-            effective control, and (2) reference trajectories to guide the learning process. Without these 
-            reference trajectories to regularize policy training, DynSyn learns to move forward with an unnatural gait behavior.
-        </p> -->
-        <!-- <p>
-            Additionally, the control performance of DRL-based methods can deteriorate due to unexpected terrain conditions or sudden actuator faults, necessitating further training to adapt to changes in both the environment and the system.        
-        </p> -->
-        <div class="video_horizontal_container" id="dynsyn_fail">
-            <div class="video_item">
-                <video controls width="100%" >
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_dynsyn_walk.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_dynsyn_walk.mp4">Video W1.</a> Unnatural behavior  without reference trajectory</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/DynSyn_rough.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/DynSyn_rough.mp4">Video W2.</a> Failure  when the terrain condition changes</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_DynSyn_5sdisable_clip3.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_DynSyn_5sdisable_clip3.mp4">Video W3.</a> Failure  when the posterior leg muscles are suddenly disabled</div>
-            </div>
+            objective, reducing the reliance on traditional reward engineering methods. Our proposed method also enables rapid adaptation to sudden system changes, fully leveraging the over-actuated nature of the musculoskeletal system.
+          </p>
         </div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
-        <h2>
-            Model Predictive Control with Morphology-aware Proportional Control 
-            (MPC<sup>2</sup>)
-        </h2>
-        <p>
-            We propose Model Predictive Control with Morphology-aware Proportional Control 
-            (<b>MPC<sup>2</sup></b>), a hierarchical model-based planning algorithm to address the challenges of high-dimensional musculoskeletal control. 
-            <br>Our method has two major components:
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>Model predictive position controller</b>
-            <br>&nbsp&nbsp&nbsp&nbsp&nbsp A sampling-based model predictive controller 
-                plans the target posture of the agent, with instant rollouts for rapid response to state changes. 
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>Morphology-aware proportional controller</b>
-            <br>&nbsp&nbsp&nbsp&nbsp&nbsp A proportional 
-                controller adaptively coordinates the actuators 
-                to achieve the target joint positions, with gain parameters dynamically adjusted according to the system morphology. 
-        </p>
-        <!-- <ul>
-            <li>
-                <b>Model predictive position controller</b>
-                <br>A sampling-based model predictive controller 
-                plans the target posture of the agent, with instant rollouts for rapid response to state changes. 
-            </li>
-            <li>
-                <b>Morphology-aware proportional controller</b>
-                <br>A proportional 
-                controller adaptively coordinates the actuators 
-                to achieve the target joint positions, with gain parameters dynamically adjusted according to the system morphology. 
-            </li>
-        </ul> -->
-<!--         <p>Our 
-            implementation of MPC<sup>2</sup> is in the <a href="https://anonymous.4open.science/r/mpc2-6B42">anonymous link</a>.</p> -->
-        <p></p>
-        <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/figure_algo.png?raw=true" alt="MPC2" style="width:100%">
-        <div class="video_label">
-            Figure W2. Algorithmic pipeline of MPC<sup>2</sup>
-        </div>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <h2>Musculoskeletal Control with MPC<sup>2</sup></h2>
-        <h3 id="fullbody">Full-body motion control</h3>
-        <p>
-            We show control sequences over full-body motion tasks using MPC<sup>2</sup>. 
-            <br>Our proposed method demonstrates:
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>near real-time</b> stable control of the full-body musculoskeletal model, where no model-based planning algorithm has achieved
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>zero-shot adaption</b> to different tasks and terrain conditions, where no previous DRL-based method has demonstrated success in whole-body musculoskeletal systems.
-        </p>
-        <!-- <ul>
-            <li>near real time stable control of the full-body musculoskeletal model without training, where no training free methods has been achieved;</li>
-            <li>zero-shot adption to different terrain conditions, where no previous DRL-based methods have demonstrated success in whole-body musculoskeletal systems.</li>
-        </ul> -->
-        <!-- <p>
-            We show control sequences of the Stand, Walk, Rough, Slope, and Stair tasks using MPC<sup>2</sup>. While no previous control methods have demonstrated success in whole-body musculoskeletal systems for these tasks,MPC<sup>2</sup> exhibits consistent and stable control performance across various tasks, enabling navigation over different terrain conditions.
-        </p> -->
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stand.mp4">Video W4.</a> Standing upright</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk.mp4">Video W5.</a> Walking over flat floor</div>
-            </div>
-            
-        </div>
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_rough.mp4">Video W6.</a> Walking over rough terrain</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_slope2.mp4">Video W7.</a> Walking up and down a slope</div>
-            </div>
-
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_stair.mp4">Video W8.</a> Walking up and down a stair</div>
-            </div>
-            
-        </div>
-
-        <h3 id="sport">Sports imitation</h3>
-        <p>
-            We also demonstrate that the training-free, near-real-time control generation of MPC<sup>2</sup> enables efficient reward engineering, facilitating stable control of sports imitation.
-        </p>
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_soccer2x.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_soccer2x.mp4">Video W9.</a> Soccer motion imitation</div>
-
-            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
-        </div>
-        <h3 id="actuator_change">Adaption to model changes</h3>
-        <p>
-            Compared to the fragile control policy of DRL-based methods, MPC<sup>2</sup> is capable of:
-            <br> &nbsp&nbsp&nbsp&nbsp&bull; zero-shot adaption to sudden model changes
-            <br> &nbsp&nbsp&nbsp&nbsp&bull; achieving robust control even in the presence of actuator faults. 
-        </p>
-        <!-- <ul>
-            <li>zero-shot adaptation to sudden dynamics changes, and</li>
-            <li>leveraging the system’s over-actuated properties to achieve robust control even in the presence of actuator faults.</li>
-        </ul> -->
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk_5sdisable_clip4.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/compressed_walk_5sdisable_clip4.mp4">Video W10.</a> Adaption to posterior leg muscles disabled</div>
-
-        </div>
-        <h3 id="force">Robust to perturbation forces</h3>
-        <p>
-            MPC^2 is capable of rapid adaption to sudden perturbation forces to the pelvis, demonstrating robust control performance.
-        </p>
-
-        <div class="video_horizontal_container">
-            <div class="video_item" style="width: 45%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_100n.mp4">Video W11.</a> Consistent 100N from random directions</div>
-            </div>
-            <div class="video_item"style="width: 45%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/perturb_500n.mp4">Video W12.</a> 0.2s 500N from random directions</div>
-            </div>
-        </div>
-
-        <h3 id="uncertain">Planning under uncertain model</h3>
-        <p>
-        We demonstrate that MPC<sup>2</sup> is capable of planning under uncertain model dynamics, where each body of the is perturbed by random forces or torques in each planning timestep (mean and one standard error accross 20 independent trials). 
-        </p>
-        <div class="video_horizontal_container">
-            <div class="video_item" style="width: 45%;">
-                <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true" alt="MPC2" style="width:100%">
-                <div id="dynsyn_actuator" class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_stand.png?raw=true">Figure W3.</a> Standing with uncertain planning model</div>
-            </div>
-            <div class="video_item"style="width: 45%;">
-                <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/perturb_walk.png?raw=true">Figure W4.</a> Walking with uncertain planning model</div>
-            </div>
-        </div>
-
-
-
-        <h3 id="ostrich">Control over ostrich models</h3>
-        <p>
-        We demonstrate that MPC<sup>2</sup> is capable of controlling the ostrich model (120 muscles) with the <b> same cost function </b> used for human model walking.
-        </p>
-
-        <div class="video_container">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_origin.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_origin.mp4">Video W13.</a> Control over ostrich models with same cost function as human walking</div>
-        </div>
-
-
-        
-
-
-        <h3 id="cost_design">Automatic cost function design</h3>
-        <p>
-            Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
-       </p>
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_ostrich.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_ostrich.png?raw=true">Figure W5.</a> Optimization over foward speed</div>
-            </div>
-            <div class="video_item" style="width: 60%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_optimized.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/ostrich_optimized.mp4">Video W14.</a> Optimized gait of ostrich (0.90m/s to 2.08m/s)</div>
-            </div>
-        </div>
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_human.png?raw=true" alt="MPC2" style="width:100%">
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/bo_human.png?raw=true">Figure W6.</a> Optimization over foward speed</div>
-            </div>
-            <div class="video_item" style="width: 60%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/human_optimized.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/human_optimized.mp4">Video W15.</a> Optimized gait of human (0.79m/s to 1.24m/s)</div>
-            </div>
-        </div>
-
-
-        <h3 id="com">Center of mass polygon support</h3>
-        <p>We demonstrate that MPC<sup>2</sup>maintains larger polygon support than DynSyn during walking, enhancing the stability.  </p>
-        <div class="video_horizontal_container">
-            <div class="video_item" style="width: 45%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com.mp4">Video W16.</a> CoM polygon support of MPC<sup>2</sup><br>area: 0.0761&plusmn;0.0260m<sup>2</sup></div>
-            </div>
-            <div class="video_item"style="width: 45%;">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/com_dynsyn.mp4">Video W17.</a> CoM polygon support of DynSyn<br>area: 0.0582&plusmn;0.0151m<sup>2</sup></div>
-            </div>
-        </div>
-
-
-        <h3 id="energy">Energy consumption</h3>
-        <p>We demonstrate that MPC<sup>2</sup> is capable of reducing the energy consumption by over 75% compared to DynSyn during walking.</p>
-        
-
-        <div class="video_container">
-            <img src="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/energy.png?raw=true" alt="MPC2" style="width:100%">
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/blob/main/energy.png?raw=true">Figure W7.</a> Energy consumption comparison</div>
-        </div>
-
-        <h3 id="mpc">Performances of MPC baselines</h3>
-        <p>We demonstrate that baseline MPC methods provided by Mujoco MPC fail to achieve walking over the MS-Human-700 model.</p>
-        <p>
-        Non sampling-based MPC require long planning time due to the computation of the derivative of the high-dimensional dynamics, hinders real-time decision making.
-        </p>
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_gd.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_gd.mp4">Video W18.</a> Gradient Descent</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqg.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqg.mp4">Video W19.</a> iLQG</div>
-            </div>
-
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqs.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_ilqs.mp4">Video W20.</a> iLQS</div>
-            </div>
-        </div>
-
-        <p>
-        Sampling based MPC struggles to sample effective control sequences due to the high-dimensionalaction space.
-        </p>
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_crossentropy.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_crossentropy.mp4">Video W21.</a> Cross Entropy</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_robustsample.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_robustsample.mp4">Video W22.</a> Robust Sampling</div>
-            </div>
-
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpc_samplegradient.mp4">Video W23.</a> Sample Gradient</div>
-            </div>
-        </div>
-        
-        <h3 id="drl">Performances of DRL baselines</h3>
-        <p>Below we show the control performance of MPO and DEP-RL on the MS-Human-700 model (choosing best from 3 random seeds). We found them fail to either stand or walk with the high-dimensional model.
-            </p>
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_stand.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_stand.mp4">Video W24.</a> MPO standing.</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_walk.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/mpo_walk.mp4">Video W25.</a> MPO walking</div>
-            </div>
-        </div>
-
-        <div class="video_horizontal_container">
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_stand.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_stand.mp4">Video W26.</a> DEP-RL standing.</div>
-            </div>
-            <div class="video_item">
-                <video width="100%" controls>
-                    <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_walk.mp4" type="video/mp4">
-                </video>
-                <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/dep_walk.mp4">Video W27.</a> DEP-RL walking</div>
-            </div>
-        </div>
-
-        <h3 id="dexhand">Dexterous manipulation over the arm model</h3>
-        <p>
-        We demonstrate that MPC<sup>2</sup> is capable of controlling the arm musculoskeletal model (85 muscles) to maniputate cube to a sequence of target orientations.
-        </p>
-
-        <div class="video_container" width="50%">
-            <video width="100%" controls>
-                <source src="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/hand_compressed.mp4" type="video/mp4">
-            </video>
-            <div class="video_label"><a href="https://github.com/MPC2-ICLR/MPC2_videos/raw/refs/heads/main/hand_compressed.mp4">Video W28.</a> Dexterous manipulation over arm musculoskeletal model</div>
-        </div>
-
-        <!-- <video></video> -->
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <h2>Conclusion</h2>
-        <p>
-            <!-- In this paper, we propose Model Predictive Control with Morphology-aware 
-            Proportional Control (MPC<sup>2</sup>), a hierarchical model-based planning 
-            algorithm designed to address the challenges of high-dimensional 
-            musculoskeletal control.  -->
-            We propose a high-dimensional control method, MPC<sup>2</sup>, that is capable of :
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; achieving <b>near real-time</b> stable control of comprehensive musculoskeletal systems
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; enabling <b>training-free</b> full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods
-            <br>&nbsp&nbsp&nbsp&nbsp&bull; <b>rapid adaption</b> to sudden model changes, fully leveraging the over-actuated nature to achieve robust control.
-        </p>
-
-
-        <!-- <ul>
-            <li>achieving near real-time stable control of high-dimensional musculoskeletal systems.</li>
-            <li>enabling zero-shot high-dimensional full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods.</li>
-            <li>being incorporated into optimal cost function design to automatically optimize the objective, reducing the reliance on traditional reward engineering methods;</li>
-            <li>rapid adaptation to sudden model changes, fully leveraging the over-actuated nature of the musculoskeletal system to achieve robust control.</li>
-        </ul> -->
+      </div>
     </div>
-</body>
-<br />
-<br />
-<br />
-<br />
-<hr style="height:8px;border-width:0;color:black;background-color:gray">
-</html>
+  </div>
+</section>
+
+
+<!-- Key Features -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Features</h2>
+    <div class="content has-text-justified">
+      <p>In this paper, we aim to control high-dimensional musculoskeletal systems to achieve movement tasks.
+        <br>We expect the control method to have the following properties:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>(near) real-time</b> control generation
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>training-free</b> deployment over different task and environments
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>robust</b> performance subject to sudden model changes
+      </p>
+      <p>We use the model, <a href="https://lnsgroup.cc/research/MS-Human-700">MS-Human-700</a>, as the target high-dimensional musculoskeletal system. 
+        <br> It is a comprehensive whole-body model consisting of 90 rigid body segments, 206 joints, and <b>700</b> muscle-tendon units.
+        <br> Both <b>non-linearity</b> neural-muscle-joint dynamics and the <b>high-dimensional</b> state and control spaces presents significant challenges to control the system.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Key Features -->
+
+<!-- DRL Issues -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">High-dimensional Musculoskeletal Control with Deep Reinforcement Learning</h2>
+    <div class="content has-text-justified">
+      <p>Among existing trials for high-dimensional musculoskeletal control, deep reinforcement learning (DRL) are predominantly used, where the successes come with the following significant requirements:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• long training time to generate effective control
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• reference trajectories to guide the learning process
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• specific task and model to reduce training difficulty
+      </p>
+      <p>
+        Below we demonstrate the control performance from the current state-of-the-art DRL-based 
+      method, DynSyn, on the MS-Human-700 model, where we observe that DynSyn:
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails to learn a natural gait without reference trajectories
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails over unexpected terrain conditions
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails when the model suddenly changes
+      </p>
+    </div>
+
+    <!-- Video content for DRL failures -->
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <video controls width="100%">
+          <source src="static/videos/compressed_dynsyn_walk.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 1. Unnatural behavior without reference trajectory
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/DynSyn_rough.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 2. Failure when the terrain condition changes
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_DynSyn_5sdisable_clip3.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 3. Failure when the posterior leg muscles are suddenly disabled
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End DRL Issues -->
+
+<!-- Our Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Model Predictive Control with Morphology-aware Proportional Control (MPC<sup>2</sup>)</h2>
+    <div class="content has-text-justified">
+      <p>
+        We propose Model Predictive Control with Morphology-aware Proportional Control 
+        (<b>MPC<sup>2</sup></b>), a hierarchical model-based planning algorithm to address the challenges of high-dimensional musculoskeletal control. 
+        <br>Our method has two major components:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Model predictive position controller</b>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A sampling-based model predictive controller 
+            plans the target posture of the agent, with instant rollouts for rapid response to state changes. 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Morphology-aware proportional controller</b>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A proportional 
+            controller adaptively coordinates the actuators 
+            to achieve the target joint positions, with gain parameters dynamically adjusted according to the system morphology. 
+      </p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <img src="static/images/figure_algo.png" alt="MPC2 Algorithm" style="width:100%">
+        <h2 class="subtitle has-text-centered">
+          Figure 2. Algorithmic pipeline of MPC<sup>2</sup>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Our Method -->
+
+<!-- Full body motion control -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Musculoskeletal Control with MPC<sup>2</sup></h2>
+    <h3 class="title is-4 has-text-centered">Full-body motion control</h3>
+    <div class="content has-text-justified">
+      <p>
+        We show control sequences over full-body motion tasks using MPC<sup>2</sup>. 
+        <br>Our proposed method demonstrates:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>near real-time</b> stable control of the full-body musculoskeletal model, where no model-based planning algorithm has achieved
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>zero-shot adaption</b> to different tasks and terrain conditions, where no previous DRL-based method has demonstrated success in whole-body musculoskeletal systems.
+      </p>
+    </div>
+
+    <!-- Video content for basic motions -->
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_stand.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 4. Standing upright
+        </h2>
+      </div>
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_walk.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 5. Walking over flat floor
+        </h2>
+      </div>
+    </div>
+    
+    <!-- Video content for advanced terrains -->
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_rough.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 6. Walking over rough terrain
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_slope2.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 7. Walking up and down a slope
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_stair.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 8. Walking up and down a stair
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End full body motion control -->
+
+<!-- Sports imitation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Sports imitation</h3>
+    <div class="content has-text-justified">
+      <p>
+        We also demonstrate that the training-free, near-real-time control generation of MPC<sup>2</sup> enables efficient reward engineering, facilitating stable control of sports imitation.
+      </p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_soccer2x.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 9. Soccer motion imitation
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Sports imitation -->
+
+<!-- Adaptation to model changes -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Adaptation to model changes</h3>
+    <div class="content has-text-justified">
+      <p>
+        Compared to the fragile control policy of DRL-based methods, MPC<sup>2</sup> is capable of:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• zero-shot adaption to sudden model changes
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• achieving robust control even in the presence of actuator faults. 
+      </p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_walk_5sdisable_clip4.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 10. Adaptation to posterior leg muscles disabled
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Adaptation to model changes -->
+
+<!-- Perturbation robustness -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Robust to perturbation forces</h3>
+    <div class="content has-text-justified">
+      <p>
+        MPC<sup>2</sup> is capable of rapid adaption to sudden perturbation forces to the pelvis, demonstrating robust control performance.
+      </p>
+    </div>
+    
+    <!-- Video content for perturbation forces -->
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/perturb_100n.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 11. Consistent 100N from random directions
+        </h2>
+      </div>
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/perturb_500n.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 12. 0.2s 500N from random directions
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Perturbation robustness -->
+
+<!-- Control over ostrich models -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Control over ostrich models</h3>
+    <div class="content has-text-justified">
+      <p>
+        We demonstrate that MPC<sup>2</sup> is capable of controlling the ostrich model (120 muscles) with the <b>same cost function</b> used for human model walking.
+      </p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/ostrich_origin.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 13. Control over ostrich models with same cost function as human walking
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Automatic cost function design -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Automatic cost function design</h3>
+    <div class="content has-text-justified">
+      <p>
+        Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
+      </p>
+    </div>
+    
+    <div class="columns">
+      <div class="column is-4">
+        <img src="static/images/bo_ostrich.png" alt="MPC2" style="width:100%">
+        <h2 class="subtitle has-text-centered">
+          Figure 5. Optimization over forward speed
+        </h2>
+      </div>
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/ostrich_optimized.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 14. Optimized gait of ostrich (0.90m/s to 2.08m/s)
+        </h2>
+      </div>
+    </div>
+    
+    <div class="columns" style="margin-top: 20px;">
+      <div class="column is-4">
+        <img src="static/images/bo_human.png" alt="MPC2" style="width:100%">
+        <h2 class="subtitle has-text-centered">
+          Figure 6. Optimization over forward speed
+        </h2>
+      </div>
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/human_optimized.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 15. Optimized gait of human (0.79m/s to 1.24m/s)
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Center of mass polygon support -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Center of mass polygon support</h3>
+    <div class="content has-text-justified">
+      <p>We demonstrate that MPC<sup>2</sup> maintains larger polygon support than DynSyn during walking, enhancing the stability.</p>
+    </div>
+    
+    <div class="columns">
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/com.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 16. CoM polygon support of MPC<sup>2</sup><br>area: 0.0761&plusmn;0.0260m<sup>2</sup>
+        </h2>
+      </div>
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/com_dynsyn.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 17. CoM polygon support of DynSyn<br>area: 0.0582&plusmn;0.0151m<sup>2</sup>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Energy consumption -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Energy consumption</h3>
+    <div class="content has-text-justified">
+      <p>We demonstrate that MPC<sup>2</sup> is capable of reducing the energy consumption by over 75% compared to DynSyn during walking.</p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <img src="static/images/energy.png" alt="MPC2" style="width:100%">
+        <h2 class="subtitle has-text-centered">
+          Figure 7. Energy consumption comparison
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Performances of MPC baselines -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Performances of MPC baselines</h3>
+    <div class="content has-text-justified">
+      <p>We demonstrate that baseline MPC methods provided by Mujoco MPC fail to achieve walking over the MS-Human-700 model.</p>
+      <p>Non sampling-based MPC require long planning time due to the computation of the derivative of the high-dimensional dynamics, hinders real-time decision making.</p>
+    </div>
+    
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_gd.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 18. Gradient Descent
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_ilqg.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 19. iLQG
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_ilqs.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 20. iLQS
+        </h2>
+      </div>
+    </div>
+    
+    <div class="content has-text-justified" style="margin-top: 20px;">
+      <p>Sampling based MPC struggles to sample effective control sequences due to the high-dimensional action space.</p>
+    </div>
+    
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_crossentropy.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 21. Cross Entropy
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_robustsample.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 22. Robust Sampling
+        </h2>
+      </div>
+      <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/mpc_samplegradient.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 23. Sample Gradient
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Performances of DRL baselines -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Performances of DRL baselines</h3>
+    <div class="content has-text-justified">
+      <p>Below we show the control performance of MPO and DEP-RL on the MS-Human-700 model (choosing best from 3 random seeds). We found them fail to either stand or walk with the high-dimensional model.</p>
+    </div>
+    
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/mpo_stand.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 24. MPO standing
+        </h2>
+      </div>
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/mpo_walk.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 25. MPO walking
+        </h2>
+      </div>
+    </div>
+    
+    <div class="columns is-multiline">
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/dep_stand.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 26. DEP-RL standing
+        </h2>
+      </div>
+      <div class="column is-6">
+        <video width="100%" controls>
+          <source src="static/videos/dep_walk.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 27. DEP-RL walking
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dexterous manipulation over the arm model -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h3 class="title is-4 has-text-centered">Dexterous manipulation over the arm model</h3>
+    <div class="content has-text-justified">
+      <p>
+        We demonstrate that MPC<sup>2</sup> is capable of controlling the arm musculoskeletal model (85 muscles) to manipulate cube to a sequence of target orientations.
+      </p>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <video width="100%" controls>
+          <source src="static/videos/hand_compressed.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 28. Dexterous manipulation over arm musculoskeletal model
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conclusion -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Conclusion</h2>
+    <div class="content has-text-justified">
+      <p>
+        We propose a high-dimensional control method, MPC<sup>2</sup>, that is capable of:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• achieving <b>near real-time</b> stable control of comprehensive musculoskeletal systems
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• enabling <b>training-free</b> full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>rapid adaption</b> to sudden model changes, fully leveraging the over-actuated nature to achieve robust control.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Conclusion -->
+    <!-- BibTeX citation -->
+    <section class="section hero is-light" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{mpc2_2024,
+      title={Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning},
+      author={Author1 and Author2 and Author3},
+      booktitle={International Conference on Learning Representations},
+      year={2024}
+    }</code></pre>
+      </div>
+    </section>
+    <!-- End BibTeX citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  </body>
+  </html>
