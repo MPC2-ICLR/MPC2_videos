@@ -225,7 +225,7 @@
     </div>
 
     <!-- Video content for DRL failures -->
-    <div class="columns is-multiline">
+    <div class="columns is-multiline" id="dynsyn_fail">
       <div class="column is-4">
         <video controls width="100%">
           <source src="static/videos/compressed_dynsyn_walk.mp4" type="video/mp4">
@@ -291,7 +291,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Musculoskeletal Control with MPC<sup>2</sup></h2>
     <h3 class="title is-4 has-text-centered">Full-body motion control</h3>
-    <div class="content has-text-justified">
+    <div class="content has-text-justified" id="fullbody">
       <p>
         We show control sequences over full-body motion tasks using MPC<sup>2</sup>. 
         <br>Our proposed method demonstrates:
@@ -365,7 +365,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h3 class="title is-4 has-text-centered">Sports imitation</h3>
-    <div class="content has-text-justified">
+    <div class="content has-text-justified" id="sport">
       <p>
         We also demonstrate that the training-free, near-real-time control generation of MPC<sup>2</sup> enables efficient reward engineering, facilitating stable control of sports imitation.
       </p>
@@ -388,7 +388,7 @@
 <!-- Adaptation to model changes -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Adaptation to model changes</h3>
+    <h3 class="title is-4 has-text-centered" id="actuator_change">Adaptation to model changes</h3>
     <div class="content has-text-justified">
       <p>
         Compared to the fragile control policy of DRL-based methods, MPC<sup>2</sup> is capable of:
@@ -414,7 +414,7 @@
 <!-- Perturbation robustness -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Robust to perturbation forces</h3>
+    <h3 class="title is-4 has-text-centered" id="force">Robust to perturbation forces</h3>
     <div class="content has-text-justified">
       <p>
         MPC<sup>2</sup> is capable of rapid adaption to sudden perturbation forces to the pelvis, demonstrating robust control performance.
@@ -447,7 +447,7 @@
 <!-- Control over ostrich models -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Control over ostrich models</h3>
+    <h3 class="title is-4 has-text-centered" id="ostrich">Control over ostrich models</h3>
     <div class="content has-text-justified">
       <p>
         We demonstrate that MPC<sup>2</sup> is capable of controlling the ostrich model (120 muscles) with the <b>same cost function</b> used for human model walking.
@@ -470,7 +470,7 @@
 <!-- Automatic cost function design -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Automatic cost function design</h3>
+    <h3 class="title is-4 has-text-centered" id="cost_design">Automatic cost function design</h3>
     <div class="content has-text-justified">
       <p>
         Combining Bayesian optimization with MPC<sup>2</sup>, we can optimize the cost function weights to improve the forward speed of the ostrich without manual tuning.
@@ -516,7 +516,7 @@
 <!-- Center of mass polygon support -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Center of mass polygon support</h3>
+    <h3 class="title is-4 has-text-centered" id="com">Center of mass polygon support</h3>
     <div class="content has-text-justified">
       <p>We demonstrate that MPC<sup>2</sup> maintains larger polygon support than DynSyn during walking, enhancing the stability.</p>
     </div>
@@ -545,7 +545,7 @@
 <!-- Energy consumption -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Energy consumption</h3>
+    <h3 class="title is-4 has-text-centered" id="energy">Energy consumption</h3>
     <div class="content has-text-justified">
       <p>We demonstrate that MPC<sup>2</sup> is capable of reducing the energy consumption by over 75% compared to DynSyn during walking.</p>
     </div>
@@ -564,7 +564,7 @@
 <!-- Performances of MPC baselines -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Performances of MPC baselines</h3>
+    <h3 class="title is-4 has-text-centered" id="mpc">Performances of MPC baselines</h3>
     <div class="content has-text-justified">
       <p>We demonstrate that baseline MPC methods provided by Mujoco MPC fail to achieve walking over the MS-Human-700 model.</p>
       <p>Non sampling-based MPC require long planning time due to the computation of the derivative of the high-dimensional dynamics, hinders real-time decision making.</p>
@@ -633,7 +633,7 @@
 <!-- Performances of DRL baselines -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Performances of DRL baselines</h3>
+    <h3 class="title is-4 has-text-centered" id="drl">Performances of DRL baselines</h3>
     <div class="content has-text-justified">
       <p>Below we show the control performance of MPO and DEP-RL on the MS-Human-700 model (choosing best from 3 random seeds). We found them fail to either stand or walk with the high-dimensional model.</p>
     </div>
@@ -681,7 +681,7 @@
 <!-- Dexterous manipulation over the arm model -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <h3 class="title is-4 has-text-centered">Dexterous manipulation over the arm model</h3>
+    <h3 class="title is-4 has-text-centered" id="dexhand">Dexterous manipulation over the arm model</h3>
     <div class="content has-text-justified">
       <p>
         We demonstrate that MPC<sup>2</sup> is capable of controlling the arm musculoskeletal model (85 muscles) to manipulate cube to a sequence of target orientations.
