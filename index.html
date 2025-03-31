@@ -37,6 +37,40 @@
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <style>
+    /* Increase base font size */
+    
+    /* Increase size of content text */
+    .content p, .content li {
+      font-size: 1.25rem;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    /* Increase size of authors and affiliations */
+    .publication-authors {
+      font-size: 1.25rem !important;
+    }
+    
+    /* Increase subtitle size */
+    .subtitle {
+      font-size: 1.3rem !important;
+    }
+    
+    /* Increase title sizes */
+    .title.is-1 {
+      font-size: 2.5rem !important;
+    }
+    
+    .title.is-3 {
+      font-size: 2rem !important;
+    }
+    
+    .title.is-4 {
+      font-size: 1.7rem !important;
+    }
+  </style>
+  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -55,49 +89,50 @@
             <h1 class="title is-1 publication-title">Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block"><a href="#" target="_blank">Author 1</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Author 2</a><sup>*</sup>,</span>
-              <span class="author-block"><a href="#" target="_blank">Author 3</a></span>
+              <span class="author-block">Yunyue Wei<sup>1</sup>,&nbsp;&nbsp;</span>
+              <span class="author-block">Shanning Zhuang<sup>1</sup>,&nbsp;&nbsp;</span>
+              <span class="author-block">Vincent Zhuang<sup>2</sup>,&nbsp;&nbsp;</span>
+              <span class="author-block">Yannan Sui<sup>1</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Institution Name<br>ICLR 2024</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="author-block"><sup>1</sup>Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Google DeepMind<br>International Conference on Learning Representations (ICLR), 2025</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Paper</span>
                   </a>
                 </span>
 
                 <!-- Supplementary PDF link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Supplementary</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://anonymous.4open.science/r/mpc2-6B42" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; cursor: default;" disabled>
                     <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>Code</span>
+                    <span>Code (Comming soon)</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="ai ai-arxiv"></i></span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
               </div>
             </div>
           </div>
@@ -117,10 +152,10 @@
       </h2>
     </div>
   </div>
-</section>
+<!-- </section> -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -147,13 +182,13 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- Key Features -->
-<section class="section">
+<!-- <section class="section"> -->
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Key Features</h2>
+    <!-- <h2 class="title is-3 has-text-centered">Key Features</h2> -->
     <div class="content has-text-justified">
       <p>In this paper, we aim to control high-dimensional musculoskeletal systems to achieve movement tasks.
         <br>We expect the control method to have the following properties:
@@ -287,7 +322,7 @@
     
     <!-- Video content for advanced terrains -->
     <div class="columns is-multiline">
-      <div class="column is-4">
+      <div class="column is-6">
         <video width="100%" controls>
           <source src="static/videos/compressed_rough.mp4" type="video/mp4">
         </video>
@@ -295,7 +330,7 @@
           Video 6. Walking over rough terrain
         </h2>
       </div>
-      <div class="column is-4">
+      <div class="column is-6">
         <video width="100%" controls>
           <source src="static/videos/compressed_slope2.mp4" type="video/mp4">
         </video>
@@ -303,7 +338,17 @@
           Video 7. Walking up and down a slope
         </h2>
       </div>
-      <div class="column is-4">
+      <!-- <div class="column is-4">
+        <video width="100%" controls>
+          <source src="static/videos/compressed_stair.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Video 8. Walking up and down a stair
+        </h2>
+      </div> -->
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-6">
         <video width="100%" controls>
           <source src="static/videos/compressed_stair.mp4" type="video/mp4">
         </video>
@@ -646,7 +691,7 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <video width="100%" controls>
-          <source src="static/videos/hand_compressed.mp4" type="video/mp4">
+          <source src="static/videos/hand_act.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
           Video 28. Dexterous manipulation over arm musculoskeletal model
@@ -675,12 +720,12 @@
     <section class="section hero is-light" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@inproceedings{mpc2_2024,
-      title={Motion Control of High-Dimensional Musculoskeletal System with Hierarchical Model-Based Planning},
-      author={Author1 and Author2 and Author3},
-      booktitle={International Conference on Learning Representations},
-      year={2024}
-    }</code></pre>
+        <pre><code>@inproceedings{iclr2025mpc2,
+          title={Motion Control of High-Dimensional Musculoskeletal Systems with Hierarchical Model-Based Planning},
+          author={Wei, Yunyue and Zhuang, Shanning and Zhuang, Vincent and Sui, Yanan},
+          booktitle={The Thirteenth International Conference on Learning Representations},
+          year={2025}
+        }</code></pre>
       </div>
     </section>
     <!-- End BibTeX citation -->
