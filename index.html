@@ -96,7 +96,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Google DeepMind<br>International Conference on Learning Representations (ICLR), 2025</span>
+              <span class="author-block"><sup>1</sup>Tsinghua University&nbsp;<sup>2</sup>Google DeepMind<br>International Conference on Learning Representations (ICLR), 2025</span>
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
@@ -211,16 +211,16 @@
     <h2 class="title is-3 has-text-centered">High-dimensional Musculoskeletal Control with Deep Reinforcement Learning</h2>
     <div class="content has-text-justified">
       <p>Among existing trials for high-dimensional musculoskeletal control, deep reinforcement learning (DRL) are predominantly used, where the successes come with the following significant requirements:
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• long training time to generate effective control
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• reference trajectories to guide the learning process
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• specific task and model to reduce training difficulty
+        <br>• long training time to generate effective control
+        <br>• reference trajectories to guide the learning process
+        <br>• specific task and model to reduce training difficulty
       </p>
       <p>
         Below we demonstrate the control performance from the current state-of-the-art DRL-based 
       method, DynSyn, on the MS-Human-700 model, where we observe that DynSyn:
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails to learn a natural gait without reference trajectories
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails over unexpected terrain conditions
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;• fails when the model suddenly changes
+      <br>• fails to learn a natural gait without reference trajectories
+      <br>• fails over unexpected terrain conditions
+      <br>• fails when the model suddenly changes
       </p>
     </div>
 
@@ -264,11 +264,11 @@
         We propose Model Predictive Control with Morphology-aware Proportional Control 
         (<b>MPC<sup>2</sup></b>), a hierarchical model-based planning algorithm to address the challenges of high-dimensional musculoskeletal control. 
         <br>Our method has two major components:
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Model predictive position controller</b>
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A sampling-based model predictive controller 
+        <br>• <b>Model predictive position controller</b>
+        <br>&nbsp; A sampling-based model predictive controller 
             plans the target posture of the agent, with instant rollouts for rapid response to state changes. 
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>Morphology-aware proportional controller</b>
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A proportional 
+        <br>• <b>Morphology-aware proportional controller</b>
+        <br>&nbsp; A proportional 
             controller adaptively coordinates the actuators 
             to achieve the target joint positions, with gain parameters dynamically adjusted according to the system morphology. 
       </p>
@@ -295,8 +295,8 @@
       <p>
         We show control sequences over full-body motion tasks using MPC<sup>2</sup>. 
         <br>Our proposed method demonstrates:
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>near real-time</b> stable control of the full-body musculoskeletal model, where no model-based planning algorithm has achieved
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>zero-shot adaption</b> to different tasks and terrain conditions, where no previous DRL-based method has demonstrated success in whole-body musculoskeletal systems.
+        <br>• <b>near real-time</b> stable control of the full-body musculoskeletal model, where no model-based planning algorithm has achieved
+        <br>• <b>zero-shot adaption</b> to different tasks and terrain conditions, where no previous DRL-based method has demonstrated success in whole-body musculoskeletal systems.
       </p>
     </div>
 
@@ -392,8 +392,8 @@
     <div class="content has-text-justified">
       <p>
         Compared to the fragile control policy of DRL-based methods, MPC<sup>2</sup> is capable of:
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• zero-shot adaption to sudden model changes
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• achieving robust control even in the presence of actuator faults. 
+        <br>• zero-shot adaption to sudden model changes
+        <br>• achieving robust control even in the presence of actuator faults. 
       </p>
     </div>
     
@@ -708,9 +708,9 @@
     <div class="content has-text-justified">
       <p>
         We propose a high-dimensional control method, MPC<sup>2</sup>, that is capable of:
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• achieving <b>near real-time</b> stable control of comprehensive musculoskeletal systems
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• enabling <b>training-free</b> full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;• <b>rapid adaption</b> to sudden model changes, fully leveraging the over-actuated nature to achieve robust control.
+        <br>• achieving <b>near real-time</b> stable control of comprehensive musculoskeletal systems
+        <br>• enabling <b>training-free</b> full-body motion control across a wide range of motion tasks, many of which have not been achieved by state-of-the-art DRL-based methods
+        <br>• <b>rapid adaption</b> to sudden model changes, fully leveraging the over-actuated nature to achieve robust control.
       </p>
     </div>
   </div>
